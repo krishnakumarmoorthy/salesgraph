@@ -1,0 +1,21 @@
+DESCRIPTION
+Write a Python code that reads the sales data of  an Automobile  company.
+Plot the sales data year wise and once the plot is generated, find the year which has the highest sales and write the output to a file. The output should be written to /code/output.txt
+
+Input Format
+You have to read the dataset, sales.csv at the location  (/data/training/sales.csv) which has 3 columns  [‘month’, ‘year’, ‘sales’] 
+
+Output Format
+Write the year which has the highest sales to /code/output.txt file.
+
+Note:
+Generating plots: You can save any number of plots to `/code/output` directory. Note that only the plots saved in /code/output will be visible to you in your code editor.
+Using matplotlib: To generate and view the plots, please ensure that you use Agg as the default backend.
+
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+
+       2. Create subplots using 
+f,(axis1,axis2) = matplotlib.pyplot.subplots(nrows=2, ncols=1)
+Use the above defined variables in the plots by adding the arguments ax=axis1, ax=axis2 
